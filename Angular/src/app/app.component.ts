@@ -17,7 +17,7 @@ export class AppComponent {
   @ViewChild(DxTreeViewComponent, { static: false }) treeView!: DxTreeViewComponent;
   treeDataSource: any;
   treeBoxValue: string[];
-  
+
   constructor(private httpClient: HttpClient) {
     this.treeDataSource = this.makeAsyncDataSource(this.httpClient, 'treeProducts.json');
     this.treeBoxValue = ['1_1', '1_1_1'];
@@ -48,7 +48,7 @@ export class AppComponent {
 
   updateSelection(treeView: any) {
     if (!treeView) return;
-    
+
     if (!this.treeBoxValue) {
       treeView.unselectAll();
     }
