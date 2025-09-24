@@ -2,3 +2,7 @@
     margin: 50px;
     width: 90vw;
 }
+
+.dx-dropdowneditor-input-wrapper.dx-selectbox-container {
+    width: 100%;
+}
